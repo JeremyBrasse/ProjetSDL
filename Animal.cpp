@@ -44,5 +44,28 @@ void Animal::long_display(){
     std::cout<<m_name<<std::endl;
     std::cout<<"x:"<<m_x<<std::endl;
     std::cout<<"y:"<<m_y<<std::endl;
+    std::cout<<"ID:"<<m_ID<<std::endl;
     std::cout<<"Quantite: "<<m_quantite<<std::endl;
+}
+
+int Animal::get_x(){
+    return m_x;
+}
+int Animal::get_y(){
+    return m_y;
+}
+int Animal::get_id(){
+    return m_ID;
+}
+void Animal::set_x(int x){
+    m_x=x;
+}
+void Animal::set_y(int y){
+    m_y=y;
+}
+void Animal::set_quant(int quant){
+    m_quantite=quant;
+}
+std::string Animal::get_name(){
+    return m_name;
 }
